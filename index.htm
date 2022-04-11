@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- @author:           Braden Mezo
+     @University Name:  Southern Illinois University - Carbondale
+     @Date Developed:   26AUG2021
+     @Date Tested:      10DEC2021
+-->
+
+<!-- Header for the Website; uses href to import the css at the beginning of the code -->
+<link rel="StyleSheet" href="main.css">
+<link rel="stylesheet" href="slicknav.css">
+<link rel="stylesheet" href="home_print.css" media="print">
+<!-- The below script allows for the use of Adobe Edge Fonts -->
+<script src="//use.edgefonts.net/redressed.js"></script>
+
+<html lang="en">
+
+  <!-- Calls and creates an audio file that loops and plays automatically on most browsers -->
+  <audio autoplay loop preload="auto">
+    <source src="Music\Maarten Schellekens - Mallet Play with Violin and Piano.mp3">
+  </audio>
+    <!-- Header of the website -->
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Title of Index -->
+        <title>Braden's Fine Watches</title> 
+
+        <!-- Metadata for the website -->
+        <meta name="description" content="Small watch shop with High quality time pieces!"> <meta name="keywords" content="Rolex, Original Grain, Bulova, G-Shock, Citizen, Braden's Fine Watches">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+      <!-- States the name of the Site -->
+      <header class="IndH"><div class="Family_Crest_Pic">
+        <img src="Pictures\Family_Crest.jpg"   alt="MPC Logo"></div>
+        <h1 class="IndH1">Braden's Fine Watches</h1>
+        <!-- This creates a Horizontal 2-Tier Navigation Bar that can be used to gain access to the other pages -->
+        <nav class="Mobile_Nav_List"></nav>
+        <nav class="Nav_List">
+          <ul>
+            <li> <a href="index.htm" class="Start"> Home Page               </a></li> 
+            <li> <a href="Watch Rentals.htm" class="Current"> Watch Rentals </a></li>
+            <li> <a href="Sales.htm"> Sales                                 </a></li>
+            <li> <a href="Services.htm"> Services                           </a>
+              <ul>
+                <li> <a href="Service1.htm"> Maintenance/Repair             </a></li>
+              </ul>
+            </li>
+            <li> <a href="Contact.htm"> Contact                             </a></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- Body of the Index -->
+    <body class="Ind1">
+          <!-- lists the pictures at the top of the banner; uses Div tag to isolate the images from others in the code -->
+          <main>
+            <p> <div class="Banner_Pics"> </p>
+          </div>
+          </main>
+            <!-- Uses the "Heading 1" option -->
+            <h2>High Quality Watches for a High Quality Individual!</h2>
+
+            <!-- Paragraph tag used here -->
+            <p>Come one, come all! We are a family owned retail watch shop that specializes in finding the perfect timepiece for you!</p>
+            <p>Currently, we sell <strong> FIVE </strong> types of watch brands: Original Grain, Bulova, Rolex, Citizen, and G-Shock! </p>
+
+            <!-- em tag used to indicate emphasis (Italix words) -->
+            <p>If you don't see the model you want <em>we can order something you like.</em></p> 
+            <!-- strong tag used to indicate emphasis (Bold words) -->
+            <p>Save money by <strong>ordering online</strong>.</p>
+
+            <!-- Paragraph tag used again to display info; br tag used to indicate a line break -->
+            <p>
+              Owner: Braden Mezo<br>
+              Location: 245 Main St. Anna IL. 62906<br>
+              Hours: 8AM - 5PM Monday - Friday<br>
+              Music is created by Maarten Schellekens<br>
+              Link to Artist's Work: https://freemusicarchive.org/music/maarten-schellekens<br>
+              Link to Licensing: https://creativecommons.org/licenses/by-nc/4.0/legalcode<br>
+            </p>
+          <!-- End of the Main -->
+    
+    <!-- End of the Body -->
+     </body>
+
+  <!-- Runs the SlickNav scripts to  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery.slicknav.js "></script>
+  <script> $('.Nav_List').slicknav(); </script>
+
+<!--End of the HTML Code File -->
+</html>
+
+

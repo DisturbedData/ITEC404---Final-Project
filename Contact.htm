@@ -1,0 +1,79 @@
+<!-- @author:           Braden Mezo
+     @University Name:  Southern Illinois University - Carbondale
+     @Date Developed:   26AUG2021
+     @Date Tested:      10DEC2021
+-->
+    
+<html lang="en">
+<link rel="StyleSheet" href="main.css">
+<link rel="stylesheet" href="slicknav.css">
+<link rel="stylesheet" href="home_print.css" media="print">
+
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+</head>
+
+<body class="CBody">
+  <header class="Con1">
+    <h1 class="Ch1">Please Complete Our Survey! </h1>
+    <nav class="Mobile_Nav_List"></nav>
+    <nav class="Nav_List">
+      <ul>
+        <li> <a href="index.htm" class="Start"> Home Page               </a></li> 
+        <li> <a href="Watch Rentals.htm" class="Current"> Watch Rentals </a></li>
+        <li> <a href="Sales.htm"> Sales                                 </a></li>
+        <li> <a href="Services.htm"> Services                           </a></li>
+        <ul>
+          <li> <a href="Service1.htm"> Maintenance/Repair               </a></li>
+        </ul>
+        <li> <a href="Contact.htm"> Contact                             </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p> <div class="Banner_Pics"> </p>
+  </main></div>
+
+  <form name="myform" action="survey_data.html" method="get" class="myform">
+	
+    <h2 class="Ch2">Contact information</h2>
+    <label for="Email">Email address:</label>
+      <input type="Email" name="Email" id="Email"><br>
+      <label for="Firstname">First name:</label>
+      <input type="text" name="Firstname" id="Firstname"><br>
+      <label for="Lastname">Last name:</label>
+      <input type="text" name="Lastname" id="Lastname"><br>
+  
+    <h2 class="Ch2">Geographic information</h2>
+    <label for="Address">Address: </label>
+      <input type="Address" name="Address" id="Address"><br>
+    <label for="State">State:</label>
+      <input type="text" name="State" id="State" required placeholder="Two Characters"
+      pattern="A-Za-z] {2}" title="Must be 2 Characters"><br>
+    <label for="Zip"> Zip code: </label>
+    <input type="text" name="Zip" id="Zip" required placeholder="Five digits"
+      pattern="\d{5}" title="Must be 99999"><br>
+    
+    <h2 class="Ch2"> Please Select Your Watch </h2>
+    <input type="checkbox" name="G-Shock" id="G-Shock" value="G-Shock">
+    <label for="G-Shock"> G-Shock: </label><br>
+    <input type="checkbox" name="Original Grain" id="Original Grain" value="Original Grain">
+    <label for="Original Grain"> Original Grain: </label><br>
+    <input type="checkbox" name="Rolex" id="Rolex" value="Rolex">
+    <label for="Rolex"> Rolex: </label><br>
+    <input type="checkbox" name="Bulova" id="Bulova" value="Bulova">
+    <label for="Bulova"> Bulova: </label><br>
+    <input type="checkbox" name="Citizen" id="Citizen" value="Citizen">
+    <label for="Citizen"> Citizen: </label><br>  
+
+    <h2 class="Ch2">Thank you for taking our survey!</h2>
+      <input type="submit" name="button" id="button" value="Submit">
+      <input type="reset" name="reset" id="reset"> 
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery.slicknav.js "></script>
+  <script> $('.Nav_List').slicknav(); </script>
+</body>
+</html>

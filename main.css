@@ -1,0 +1,414 @@
+/*  @author:           Braden Mezo
+     @University Name:  Southern Illinois University - Carbondale
+     @Date Developed:   26AUG2021
+     @Date Tested:      10DEC2021
+*/
+
+/* Universal Styles used on all pages*/
+:link { color: blue;}
+:visited {color: blueviolet;}
+
+/*Styles used on index.htm*/
+/* This controls the display parameters for the Header */
+.IndH {
+    display: flex;
+    flex: 1 1 2560px;
+    text-align: center;
+    background-color: burlywood;
+    background-size: 100%;
+    font-size: 200%;
+    padding-bottom: .5em;
+    border-bottom: 5px solid black;
+    color: black;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* This controls the flex basis for the Header */
+.IndH > * {
+    flex-basis: 100%;
+}
+
+/* This controls the display parameters for the Header heading section*/
+.IndH1 {
+    flex: 1 1 2560;
+    margin-bottom: 0;
+    /* This font family is loaded using the Adobe Edge Fonts */
+    font-family: fantasy;
+}
+
+/* This controls the display parameters for the banner pics class found throughout the website */
+.Banner_Pics {
+    border-radius: 10%;
+    display: flex;
+    background-image: url("Pictures/Original_Grain_1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 170px;
+}
+
+/* This controls the hover display parameters for the banner pics section */
+.Banner_Pics:hover {
+    transition: .5s ease;
+    background-image: url("Pictures/Rolex_1.jpg");
+}
+
+/* This controls the display parameters for the Index second section */
+.Ind1 {
+    display: flex;
+    flex-wrap: wrap;
+    size: auto;
+    font-size: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: darkgray;
+    flex: 1 1 2560px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* This controls the flex basis parameters for Ind1 */
+.Ind1 > * {
+    flex-basis: 100%;
+}
+
+/* Div is used in order to distinguish different collections of data classes. In this case it is used for locations of images in the Index. */
+div:where(.Banner_Pics) img {
+    border: 2px solid black;
+}
+
+/* This sets the confif for the Title image on the Index page */
+div:where(.Family_Crest_Pic) img {
+    width: 150px;
+    margin: 0;
+    border: 2px solid black;
+}
+
+/* .Nav_list is the variable that presents the navigation menu on the web pages. It is designed as a vertical Nav Menu. */
+.Nav_List ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Unordered list 1 in the Nav Menu */
+.Nav_List ul li {
+    float: left;
+}
+
+/* This section of the Nav list address the display of the submenus, creating a Two-tier navigation */
+.Nav_List ul ul {
+    display: none;
+    top: 100%;
+    position: absolute;
+}
+
+/* Listed objects in the second unordered list; this is necessary for the location of the drop down box */
+.Nav_List ul ul li {
+    float: none;
+    padding: none;
+}
+
+/* This set the hover for the embedded drop down menu */
+.Nav_List ul li:hover > ul {
+    display: block;
+}
+
+/* More configurations to setup the dropdown menu */
+.Nav_List > ul::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+/* Overall look and layout of the navigation menu */
+.Nav_List ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    border: 2px solid red;
+}
+
+/* Turns off the mobile menu while in desktop mode */
+.slicknav_menu {
+    display: none;
+}
+
+/* Calls and regulates the max widths to control and regulate what content is displayed as the screensize changes */
+/* This is done to help ensure website responsiveness */
+@media all and (max-width:576px) {
+    .Nav_List {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        width: 100%;
+    }
+    .IndH1 {
+        display: none;
+    }
+    .Banner_Pics {
+        display: none;
+    }
+}
+
+@media all and (max-width:768px) {
+    .Nav_List {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        width: 100%;
+    }
+    .IndH1 {
+        display: none;
+    }
+    .Banner_Pics {
+        display: none;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .Nav_List {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        width: 100%;
+    }
+    .IndH1 {
+        display: none;
+    }
+    .Banner_Pics {
+        display: none;
+    }
+
+}
+
+/*Styles used on Watch Rentals.htm*/
+.Rent1 {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid black;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: .5em;
+    margin-bottom: 0;
+    min-height: none;
+    max-height: 2056px;
+}
+
+.Rent1 > * {
+    flex-basis: 100%;
+}
+
+.Rent2 {
+    border-right: 2px solid black ;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    max-width: 35%;
+    align-content: center;
+    max-height: 300%;
+    margin-top: 0;
+}
+
+.Rent3 {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    max-width: 64%;
+    max-height: 300%;
+    margin-top: 0;
+}
+
+.Rent4 {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 2056px;
+    max-width: 100%;
+}
+
+.RBody {
+    border: 2px solid black;
+    display: flex;
+    background-color: cadetblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.RBody > * {
+    flex-basis: 100%;
+}
+
+/* Styles used on the Sales Page */
+.Sale1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
+.SaBody {
+    flex: 1 1 2560px;
+    background-color: burlywood;
+    padding-bottom: .5em;
+    color: black;
+    position: relative;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.SaBody > * {
+    flex-basis: 100%;
+}
+
+.SaMain {
+    flex: 1 1 2560px;
+    flex-wrap: wrap;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.Sale_Video {
+    display: flex;
+    flex: 1 1 2560px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styles used on the Services Page */
+.ServH {
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
+.SeBody {
+    flex: 1 1 2560px;
+    background-color: burlywood;
+    padding-bottom: .5em;
+    color: black;
+    position: relative;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.SeMain {
+    flex: 1 1 2560px;
+    flex-wrap: wrap;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+/* Services Addition Page */
+.Serv1H {
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    display: flex;
+    flex: 1 1 2560px;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.Serv1H > * {
+    flex-basis: 100%;
+}
+
+.Serv_Table th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    width: 15%;
+}
+td {
+    width: 15%;
+}
+thead {
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles used on the Contact Page */
+.Con1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 3em;
+}
+.Cbody > * {
+    margin: 0;
+    padding: 0;
+}
+.Cbody {
+    font: 87.5% Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.Ch1 {
+    color: blue; 
+    font-size: 140%;
+}
+.Ch2 {
+    font-size: 115%;
+    padding: .5em 0;
+}
+label {
+    color: blue;
+    float: left;
+    width: 8em;
+    font-weight: bold;
+    text-align: left;
+}
+input {
+    width: 15em;
+    margin: 0 0 .5em 1em;
+}
+input[type="checkbox"] {
+    width: 1em;
+}
+#button, #reset {
+    width: 7em;
+    background-color: silver;
+    box-shadow: 2px 2px 0 blue; }
+#button {
+    margin-left: 9em;
+}
+
+/* Styles for the Survey_Data Page */
+.Survey {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 30px;
+    border: 2px solid blue;
+}
+dt {
+    font-weight: bold;
+}
